@@ -1,9 +1,13 @@
 "use strict";
 
 const formatter = require("../lib/formatter.js");
+const { describe } = require("node:test");
 
-module.exports = () => {
-  const test = [
+describe('formatter', () => {
+  const noStack = new SyntaxError("test");
+  noStack.stack = null;
+
+  const tests = [
     new Error("test"),
     1n,
     new Set([1, 2, 3]),
@@ -33,7 +37,7 @@ module.exports = () => {
     { test: [1, 2,], test2: ["test", 22, true, { test: 1, bool: true, big: 1n }] },
     new Map([[() => { }, 2], [{ a: "a" }, { value: 33 }]]),
     new Set([[1, 2], [0, [123]]]),
-    new Error("test"),
+    noStack,
     123n,
     async () => { },
     new WeakMap(),
@@ -46,8 +50,7 @@ module.exports = () => {
     new Intl.DateTimeFormat(),
     Atomics,
   ];
+  for (const test of tests) formatter(test);
+});
 
-  for (const t of test) {
-    console.log(formatter(t));
-  }
-};
+

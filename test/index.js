@@ -1,8 +1,5 @@
 "use strict";
 
+const tests = ["logbook", "formatter"];
 
-const formatter = require("./test_formatter.js");
-const logbook = require("./logbook.js");
-
-// formatter();
-logbook();
+for (const test of tests) require(`./${test}.js`);

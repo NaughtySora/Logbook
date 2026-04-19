@@ -1,4 +1,3 @@
-
 type Channels = Array<"log" | "error" | "info" | "warn">;
 type Channel = Channels[number];
 

@@ -1,6 +1,6 @@
 {
   "name": "naughty-logbook",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "NaughtySora <naughtysora@proton.me>",
   "license": "MIT",
   "description": "Nodejs file system logger with rotation",
@@ -19,15 +19,16 @@
     "main.d.ts"
   ],
   "dependencies": {
-    "naughty-util": "^0.4.2"
+    "naughty-util": "^0.6.3"
   },
   "devDependencies": {
-    "@types/node": "^22.10.5",
-    "typescript": "^5.7.2"
+    "@types/node": "^25.6.0",
+    "c8": "^11.0.0",
+    "typescript": "^6.0.3"
   },
   "scripts": {
     "types": "tsc -p ./tsconfig.json",
-    "test": "node test/index.js"
+    "test": "c8 node test/index.js"
   },
   "repository": {
     "type": "git",
