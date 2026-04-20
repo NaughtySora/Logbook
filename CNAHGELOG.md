@@ -6,3 +6,10 @@
 - tests
 - types
 - docs
+
+## [0.2.0] - 2026-04-20
+
+- init
+- tests
+- types
+- docs

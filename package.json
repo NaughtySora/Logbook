@@ -1,6 +1,6 @@
 {
   "name": "naughty-logbook",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "author": "NaughtySora <naughtysora@proton.me>",
   "license": "MIT",
   "description": "Nodejs file system logger with rotation",
