@@ -14,7 +14,7 @@ interface LogBookOptions {
 export class LogBook {
   constructor(options: LogBookOptions);
   cursor(name: Channel, query?: QueryOptions): AsyncGenerator<Buffer<ArrayBufferLike> & string>;
-  delete(name: Channel, query?: QueryOptions): Promise<void>;
+  delete(name: Channel, query?: QueryOptions): Promise<string[]>;
   log(...logs: any[]): void;
   error(...logs: any[]): void;
   info(...logs: any[]): void;
