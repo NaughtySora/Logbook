@@ -32,10 +32,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NaughtySora/naughty-logbook"
+    "url": "git+https://github.com/NaughtySora/Logbook"
   },
   "bugs": {
-    "url": "https://github.com/NaughtySora/naughty-logbook/issues",
+    "url": "https://github.com/NaughtySora/Logbook/issues",
     "email": "naughtysora@proton.me"
   }
 }
