@@ -9,7 +9,9 @@
 
 ## [0.2.0] - 2026-04-20
 
-- init
-- tests
-- types
-- docs
+- update interface of delete method
+- add coverage
+- update deps
+- better tests
+- update formatter logic
+- improve logger internal structure
